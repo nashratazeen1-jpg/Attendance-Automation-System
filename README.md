@@ -116,7 +116,7 @@ This produces a structured PA Sheet ready for academic use and submission.
 
 ---
 
-## System Flow
+## System Flow 🪜
 
 ```text
 Attendance Excel File
