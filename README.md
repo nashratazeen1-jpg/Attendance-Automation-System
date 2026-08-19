@@ -91,9 +91,7 @@ PA_Sheet_Result.xlsx
 
 This produces a structured PA Sheet ready for academic use and submission.
 
----
-
-## Key Features
+## Key Features ✨
 
 - **Attendance Automation** — Automates calculations that would otherwise require manual Excel formulas.
 - **Monthly Result Generation** — Creates separate attendance result files for each month.
@@ -103,16 +101,12 @@ This produces a structured PA Sheet ready for academic use and submission.
 - **Reduced Errors** — Minimizes errors caused by manual calculations and formula handling.
 - **Simple Workflow** — Designed to make the process easier for non-technical users.
 
----
-
-## Technology Used
+## Technology Used 🤖
 
 - **Python** — Core processing and automation
 - **Pandas** — Reading, processing, and analyzing Excel attendance data
 - **Tkinter** — Graphical User Interface (GUI)
 - **Microsoft Excel** — Input and output format for attendance records
-
----
 
 ## System Flow 🪜
 
