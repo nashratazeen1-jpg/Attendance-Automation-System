@@ -4,7 +4,7 @@ A Python-based **Attendance Automation System** that processes attendance data f
 
 The main goal is to **reduce faculty workload, save time, and minimize manual calculation errors** caused by repeatedly applying Excel formulas.
 
-## Project Overview 🚀
+## 🚀Project Overview:
 
 In the traditional process, attendance data is maintained in Excel and calculations such as attendance percentage, monthly results, and semester-wise PA sheets are prepared manually.
 
@@ -45,7 +45,7 @@ Example:
 PA_Sheet_Result.xlsx
 ```
 
-## How the System Works ⚒️
+## ⚒️How the System Works:
 
 ### Step 1 — Provide Input
 
@@ -91,7 +91,7 @@ PA_Sheet_Result.xlsx
 
 This produces a structured PA Sheet ready for academic use and submission.
 
-## Key Features ✨
+## ✨Key Features:
 
 - **Attendance Automation** — Automates calculations that would otherwise require manual Excel formulas.
 - **Monthly Result Generation** — Creates separate attendance result files for each month.
@@ -101,14 +101,14 @@ This produces a structured PA Sheet ready for academic use and submission.
 - **Reduced Errors** — Minimizes errors caused by manual calculations and formula handling.
 - **Simple Workflow** — Designed to make the process easier for non-technical users.
 
-## Technology Used 🤖
+## 🤖Technology Used:
 
 - **Python** — Core processing and automation
 - **Pandas** — Reading, processing, and analyzing Excel attendance data
 - **Tkinter** — Graphical User Interface (GUI)
 - **Microsoft Excel** — Input and output format for attendance records
 
-## System Flow 🪜
+## 🪜System Flow:
 
 ```text
 Attendance Excel File
