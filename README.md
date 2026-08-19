@@ -45,9 +45,7 @@ Example:
 PA_Sheet_Result.xlsx
 ```
 
----
-
-## How the System Works
+## How the System Works ⚒️
 
 ### Step 1 — Provide Input
 
