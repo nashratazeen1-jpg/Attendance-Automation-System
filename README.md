@@ -18,16 +18,6 @@ Instead of manually applying formulas and preparing reports for each month, the 
 - Generates monthly attendance result files.
 - Combines monthly results into a final semester PA Sheet.
 
-## Project Files
-
-```text
-Attendance-Automation-System/
-│
-├── monthly.py
-├── pa_sheet.py
-└── README.md
-```
-
 ### `monthly.py`
 
 Handles the **monthly attendance calculation**.
