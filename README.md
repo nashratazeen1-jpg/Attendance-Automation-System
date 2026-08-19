@@ -1,6 +1,6 @@
 # Attendance Automation System
 
-A Python-based **Attendance Automation System** that processes attendance data from Excel files, automatically calculates student-wise attendance, generates monthly result files, and prepares a final semester Progressive Attendance (PA) Sheet.
+A Python-based **Attendance Automation System** that processes attendance data from Excel files, automatically calculates **student-wise slot-based attendance**, generates monthly result files, and prepares a final semester Progressive Attendance (PA) Sheet.
 
 The main goal is to **reduce faculty workload, save time, and minimize manual calculation errors** caused by repeatedly applying Excel formulas.
 
@@ -14,15 +14,33 @@ Instead of manually applying formulas and preparing reports for each month, the 
 
 - Takes attendance data from an Excel file.
 - Processes the data automatically.
-- Calculates student-wise attendance percentages.
+- Calculates **Morning, Afternoon, and Evening slot-wise attendance** for each student.
+- Calculates individual slot percentages and the **overall attendance percentage**.
 - Generates monthly attendance result files.
 - Combines monthly results into a final semester PA Sheet.
 
 ### `monthly.py`
 
-Handles the **monthly attendance calculation**.
+Handles the **monthly slot-based attendance calculation**.
 
-It processes the attendance Excel data for a selected month, performs the required calculations, and generates the corresponding monthly result Excel file.
+It processes the attendance Excel data for a selected month and calculates:
+
+- **Morning (MRST)** attended slots and percentage.
+- **Afternoon (AFST)** attended slots and percentage.
+- **Evening (EVST)** attended slots and percentage.
+- **Total attended slots** across all three slots.
+- **Overall attendance percentage** based on the total available slots.
+
+The total available slots depend on the selected month type:
+
+```text
+28 Days → 24 College Days → 72 Total Slots
+30 Days → 26 College Days → 78 Total Slots
+31 Days → 27 College Days → 81 Total Slots
+15 Days → 15 College Days → 45 Total Slots
+```
+
+After processing, the system generates the corresponding monthly result Excel file.
 
 Example monthly outputs:
 
@@ -62,11 +80,13 @@ The supported month types are:
 - 31 Days
 - 15 Days
 
+Each month type has a predefined number of college days and total available attendance slots.
+
 ### Step 3 — Automatic Processing
 
 `monthly.py` reads and processes the Excel attendance data automatically.
 
-It calculates student-wise attendance and generates the required monthly result file.
+It calculates **Morning, Afternoon, and Evening attended slots**, their individual percentages, the total attended slots, and the overall student attendance percentage.
 
 ### Step 4 — Monthly Result Generation
 
@@ -77,7 +97,7 @@ The system can generate separate result files for different months, such as:
 - February
 - March
 
-Each result file contains the corresponding student attendance percentage.
+Each result file contains the student's **slot-wise attendance, total attended slots, and overall attendance percentage**.
 
 ### Step 5 — Generate Final PA Sheet
 
@@ -94,8 +114,9 @@ This produces a structured PA Sheet ready for academic use and submission.
 ## ✨Key Features:
 
 - **Attendance Automation** — Automates calculations that would otherwise require manual Excel formulas.
+- **Slot-wise Attendance Calculation** — Calculates Morning, Afternoon, and Evening attended slots and their percentages.
 - **Monthly Result Generation** — Creates separate attendance result files for each month.
-- **Student-wise Attendance Calculation** — Calculates attendance percentage for individual students.
+- **Student-wise Attendance Calculation** — Calculates total attended slots and overall attendance percentage for individual students.
 - **Semester PA Sheet Generation** — Combines monthly results into one final semester report.
 - **Reduced Faculty Workload** — Removes repetitive manual calculation and report preparation work.
 - **Reduced Errors** — Minimizes errors caused by manual calculations and formula handling.
@@ -114,16 +135,20 @@ This produces a structured PA Sheet ready for academic use and submission.
 Attendance Excel File
         │
         ▼
-   Select Month
+   Select Month Type
         │
         ▼
    monthly.py
         │
         ▼
-Process Attendance Data
+Process Slot-wise Attendance
+(Morning / Afternoon / Evening)
         │
         ▼
-Calculate Attendance %
+Calculate Slot-wise %
+        │
+        ▼
+Calculate Total Slots & Overall %
         │
         ▼
 Monthly Result Excel Files
@@ -145,7 +170,7 @@ Final Semester PA Sheet
 ```text
 dec_result.xlsx
 jan_result.xlsx
-feb_result.xlsx:
+feb_result.xlsx
 mar_result.xlsx
 ```
 
