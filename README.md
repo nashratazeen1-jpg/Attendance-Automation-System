@@ -138,14 +138,14 @@ Combine Monthly Results
 Final Semester PA Sheet
 ```
 
-## Example Output
+## 🔷 Example Output:
 
 ### Monthly Result
 
 ```text
 dec_result.xlsx
 jan_result.xlsx
-feb_result.xlsx
+feb_result.xlsx:
 mar_result.xlsx
 ```
 
