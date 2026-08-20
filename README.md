@@ -122,18 +122,18 @@ This produces a structured PA Sheet ready for academic use and submission.
 - **Reduced Errors** — Minimizes errors caused by manual calculations and formula handling.
 - **Simple Workflow** — Designed to make the process easier for non-technical users.
 
-## 🤔Why Slot-wise Attendance?
+## 🤔 Why Slot-wise Attendance?
 
 Slot-wise attendance helps faculties identify which time slot a student is most frequently absent in. This makes it easier to spot attendance patterns and, when required, discuss them with students or parents for better understanding and follow-up.
 
-## 🤖Technology Used:
+## 🤖 Technology Used:
 
 - **Python** — Core processing and automation
 - **Pandas** — Reading, processing, and analyzing Excel attendance data
 - **Tkinter** — Graphical User Interface (GUI)
 - **Microsoft Excel** — Input and output format for attendance records
 
-## 🪜System Flow:
+## 🪜 System Flow:
 
 ```text
 Attendance Excel File
