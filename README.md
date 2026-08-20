@@ -4,7 +4,7 @@ A Python-based **Attendance Automation System** that processes attendance data f
 
 The main goal is to **reduce faculty workload, save time, and minimize manual calculation errors** caused by repeatedly applying Excel formulas.
 
-## 🚀Project Overview:
+## 🚀 Project Overview:
 
 In the traditional process, attendance data is maintained in Excel and calculations such as attendance percentage, monthly results, and semester-wise PA sheets are prepared manually.
 
