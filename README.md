@@ -63,7 +63,7 @@ Example:
 PA_Sheet_Result.xlsx
 ```
 
-## ⚒️How the System Works:
+## ⚒️ How the System Works:
 
 ### Step 1 — Provide Input
 
@@ -111,7 +111,7 @@ PA_Sheet_Result.xlsx
 
 This produces a structured PA Sheet ready for academic use and submission.
 
-## ✨Key Features:
+## ✨ Key Features:
 
 - **Attendance Automation** — Automates calculations that would otherwise require manual Excel formulas.
 - **Slot-wise Attendance Calculation** — Calculates Morning, Afternoon, and Evening attended slots and their percentages.
