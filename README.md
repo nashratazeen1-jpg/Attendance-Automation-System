@@ -194,3 +194,5 @@ The project can be further extended with:
 - Real-time attendance tracking
 - Web-based attendance dashboard
 - Cloud-based attendance data management
+
+
